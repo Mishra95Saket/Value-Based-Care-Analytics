@@ -1,0 +1,4 @@
+intervention,expected_readmission_reduction_pct,avoidable_paid_baseline,estimated_savings,estimated_program_cost,estimated_net_savings,roi
+Care coordination program,0.1,4703461.12,470346.11,17485.0,452861.11,25.9
+Post-discharge follow-up (7d),0.07,4703461.12,329242.28,4842.0,324400.28,66.997
+Medication reconciliation,0.05,4703461.12,235173.06,7532.0,227641.06,30.223

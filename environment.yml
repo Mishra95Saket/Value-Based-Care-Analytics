@@ -1,0 +1,11 @@
+name: healthcare_readmissions_analytics
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pandas
+  - numpy
+  - plotly
+  - pip
+  - pip:
+      - streamlit
