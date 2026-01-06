@@ -1,11 +1,6 @@
+### @author - Saket Mishra
+
 # Value-Based Care Analytics: Preventable Readmissions & Cost Leakage (Synthetic Claims)
-
-A **senior-level Healthcare Data Analyst** portfolio project that mirrors real payer + hospital workflows:
-- **Synthetic claims + admissions data generator** (no PHI)
-- End-to-end **readmissions analytics pipeline**
-- BI-ready outputs + **executive dashboard** (offline HTML + optional Streamlit)
-
----
 
 ## Business Questions Answered
 
@@ -41,44 +36,12 @@ healthcare-readmissions-analytics/
 
 ---
 
-## How to Run
-
-### Install
-```bash
-pip install -r requirements.txt
-```
-
-### 1) Generate synthetic data
-```bash
-python src/generate_synthetic_claims.py --n_members 5000 --seed 42
-```
-
-### 2) Build analytics tables + KPIs
-```bash
-python src/build_analytics_tables.py
-```
-
-### 3) Generate the dashboard (downloadable HTML)
-```bash
-python src/make_html_dashboard.py
-```
-
-Open:
-- `dashboard/readmissions_dashboard.html`
-
-### Optional: Run interactive app
-```bash
-streamlit run dashboard/streamlit_app.py
-```
-
----
-
 ## Dashboard Explanation (What each section means)
 
 - **KPI 1: 30-Day Readmission Rate** — overall rate of next admission within 30 days of discharge
 - **KPI 2: Preventable Readmission Spend** — total paid amount on readmission admissions flagged preventable (proxy)
 - **Top Diagnoses (Preventable Events)** — diagnoses driving avoidable readmissions (actionable targets)
-- **Risk Tier Distribution** — how many members are Low/Medium/High risk (care management targeting)
+- **Risk Tier Distribution** — how many members are Low/Medium/High risk
 - **Intervention Net Savings + ROI Table** — which programs deliver best expected net savings
 
 ---
@@ -91,9 +54,9 @@ streamlit run dashboard/streamlit_app.py
 
 ---
 
-## Strong Next Steps (to level this up further)
+## Next Steps
 
-1. Risk-adjusted benchmarking by hospital (indirect standardization)
+1. Risk-adjusted benchmarking by hospital
 2. Add pharmacy fills and compute PDC adherence
 3. Train an ML model (logistic regression/XGBoost) + calibration + SHAP
-4. Deploy Streamlit publicly and link it in README
+
